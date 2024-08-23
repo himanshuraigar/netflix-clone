@@ -29,7 +29,7 @@ body {
 }
 
 nav {
-    max-width: 60vw;
+    max-width: 75vw;
     justify-content: space-between;
     margin: auto;
     display: flex;
@@ -81,7 +81,7 @@ nav button {
     text-align: center;
 }
 
-.separation {
+.gray-line {
     height: 7px;
     background-color: rgb(46, 44, 44);
     position: relative;
@@ -89,27 +89,27 @@ nav button {
 }
 
 .btn {
-    padding: 3px 8px;
-    font-weight: 400;
+    padding: 6px 15px;
+    font-weight: 600;
     color: white;
     background-color: rgba(248, 243, 243, 0.021);
-    border-radius: 4px;
-    border: 1px solid white;
+    border-radius: 5px;
     cursor: pointer;
+    
 
 }
 
 .btn-red {
-    background-color: red;
+    background-color: rgb(229,9,20);
     color: white;
-    padding: 3px 24px;
+    padding: 12px 28px;
     font-size: 20px;
-    border-radius: 4px;
+    border-radius: 6px;
     font-weight: 400;
 }
 
 .btn-red-sm {
-    background-color: red;
+    background-color: rgb(229,9,20);
     color: white;
 }
 
@@ -121,18 +121,19 @@ nav button {
 }
 
 .main input {
-    padding: 7px 101px 8px 14px;
+    padding: 12px 150px 12px 15px;
     color: white;
-    font-size: 12px;
+    font-size: 20px;
     border-radius: 4px;
     background-color: rgba(23, 23, 23, 0.7);
     border: 1px solid rgba(246, 238, 238, 0.5);
+    
 }
 
 .first {
     display: flex;
     justify-content: center;
-    max-width: 70vw;
+    max-width: 75vw;
     margin: auto;
     color: white;
     justify-content: center;
@@ -153,11 +154,16 @@ nav button {
 
 .secImg video {
     position: absolute;
-    top: 51px;
-    right: 0;
-    width: 555px;
+    top: 115px;
+    left:75px;
+    width: 450px;
 }
-
+.secImg .vid {
+    position: absolute;
+    top: 70px;
+    left: 100px;
+    width: 350px;
+}
 section.first>div {
     display: flex;
     flex-direction: column;
@@ -229,6 +235,17 @@ footer .questions {
 
 
 @media screen and (max-width: 1300px) {
+    
+.main input {
+    padding: 8px 100px 8px 15px;
+    
+    
+}
+.btn-red {
+
+    padding: 8px 28px;
+  
+}
 
     nav{
         max-width: 90vw;
@@ -243,9 +260,15 @@ footer .questions {
     }
 
     .secImg video {
-        width: 305px;
+        width: 225px;
+        left: 40px;
+        top: 27%;
     }
-
+    .secImg .vid {
+        width: 190px;
+        left: 60px;
+        top: 18%;
+    }
     .hero> :nth-child(1) {
         font-size: 32px;
     }
@@ -278,8 +301,9 @@ footer .questions {
 
     .footer-item{
         align-items: center;
+        
     }
- 
+
 
 }
 
